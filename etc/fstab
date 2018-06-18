@@ -1,0 +1,22 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda5
+UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx	/         	ext4      	rw,relatime,data=ordered,discard	0 1
+
+# /dev/sda4
+UUID=yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy	/boot     	ext4      	rw,relatime,data=ordered,discard	0 2
+
+# /dev/sda3
+UUID=zzzz-zzzz      	/boot/efi 	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro,discard	0 2
+
+# /dev/sda6
+UUID=wwwwwwww-wwww-wwww-wwww-wwwwwwwwwwww  	/home   	ext4      	rw,relatime,data=ordered,discard	0 2
+
+# /dev/sda7
+/dev/sda7  	none   	swap      	defaults,discard	0 0
+
+# /dev/sda8
+UUID=vvvvvvvv-vvvv-vvvv-vvvv-vvvvvvvvvvvv  	/home/sebelino/extra   	ext4      	rw,relatime,data=ordered,discard	0 2
+

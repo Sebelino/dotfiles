@@ -1,0 +1,25 @@
+[user]
+    email = "sebelino7@gmail.com"
+	name = Sebastian Olsson
+[push]
+	default = simple
+[core]
+	excludesfile = /home/sebelino/.gitignore_global
+[color]
+	ui = true
+[alias]
+    diffbranches = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative # master..mybranch
+    orgtree = log --graph --full-history --decorate --pretty=oneline --abbrev-commit
+    tree1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(cyan)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    tree2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(cyan)- %an%C(reset)' --all
+    tree = !"git tree1"
+	s = status
+	co = checkout
+	c = commit
+	a = add
+	d = diff
+    find = log --all --pretty=format:%H --grep
+    migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
+    smigrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; git checkout $2 }; f"
+    putaside = "!g(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git commit -m amendme && git stash && git checkout $CURRENT && git stash pop; }; g"
+    up = !git pull && git submodule update --init

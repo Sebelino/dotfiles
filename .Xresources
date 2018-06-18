@@ -1,0 +1,83 @@
+! Ladda denna med xrdb .Xresources
+
+! terminal colors ------------------------------------------------------------
+
+! ! tangoesque scheme
+! *background: #111111
+! *foreground: #00FF00
+! ! Black (not tango) + DarkGrey
+! *color0:  #000000
+! *color8:  #555753
+! ! DarkRed + Red
+! *color1:  #ff6565
+! *color9:  #ff8d8d
+! ! DarkGreen + Green
+! *color2:  #93d44f
+! *color10: #c8e7a8
+! ! DarkYellow + Yellow
+! *color3:  #eab93d
+! *color11: #ffc123
+! ! DarkBlue + Blue
+! *color4:  #204a87
+! *color12: #3465a4
+! ! DarkMagenta + Magenta
+! *color5:  #ce5c00
+! *color13: #f57900
+! !DarkCyan + Cyan (both not tango)
+! *color6:  #89b6e2
+! *color14: #46a4ff
+! ! LightGrey + White
+! *color7:  #cccccc
+! *color15: #ffffff
+
+!URxvt*font:            xft:inconsolata:size=12
+URxvt*font:            xft:inconsolata:size=8,xft:monospace:size=8
+!URxvt*font:            xft:monospace:size=10
+URxvt*urlLauncher:     chrome  
+URxvt*scrollBar:       false
+URxvt*scrollBar_right: false
+URxvt*scrollColor:     #000000
+URxvt*allow_bold:      true
+URxvt*shading:         0
+URxvt*fading:          50
+URxvt*scrollstyle:     rxvt
+URxvt*color4:          RoyalBlue
+URxvt*letterSpace:     0
+
+URxvt*scrollTtyOutput:   false
+URxvt*scrollWithBuffer:  true
+URxvt*scrollTtyKeypress: true
+URxvt*background:        rgba:0000/0000/0000/c800
+
+URxvt.depth: 32
+URxvt.intensityStyles: false
+URxvt.background:      rgba:1111/1111/1111/dddd
+URxvt.foreground:      white
+URxvt.borderless:      true
+URxvt.transparent:     false
+URxvt.highlightColor:  #d01018
+URxvt.underlineURLs:   True
+
+! Single-line scrolling
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard,keyboard-select,selection-to-clipboard
+
+!URxvt.keysym.M-0xe5: perl:keyboard-select:activate
+URxvt.keysym.M-0xe5: perl:keyboard-select:search
+
+! Savelines
+URxvt.saveLines:  20000
+
+! Fixes Inconsolata font difference 2 Jan 2016
+Xft.hintstyle:  hintnone
+
+! ! urxvt font setting
+! Xft.autohint: 0
+! Xft.lcdfilter:  lcddefault
+! Xft.hinting: 1
+! Xft.antialias: 1
+! Xft.rgba: rgb

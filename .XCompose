@@ -1,0 +1,34 @@
+! This file defines custom Compose sequences for Unicode characters.
+
+! include "%L"
+
+! 1-key compositions
+<Multi_key> <a> : "<"
+<Multi_key> <r> : ">"
+<Multi_key> <e> : "å"
+<Multi_key> <i> : "ä"
+<Multi_key> <o> : "ö"
+<Multi_key> <u> : "ü"
+<Multi_key> <h> : "a"
+
+! 2-key compositions
+<Multi_key> <q> <e> : "Å"
+<Multi_key> <q> <i> : "Ä"
+<Multi_key> <q> <o> : "Ö"
+<Multi_key> <n> <a> : "á"
+<Multi_key> <n> <e> : "é"
+<Multi_key> <n> <i> : "í"
+<Multi_key> <n> <o> : "ó"
+<Multi_key> <n> <u> : "ú"
+<Multi_key> <l> <a> : "à"
+<Multi_key> <l> <e> : "è"
+<Multi_key> <l> <i> : "ì"
+<Multi_key> <l> <o> : "ò"
+<Multi_key> <l> <u> : "ù"
+<Multi_key> <1> <2> : "½"
+<Multi_key> <1> <4> : "¼"
+<Multi_key> <3> <4> : "¾"
+
+! 3-key compositions
+<Multi_key> <q> <n> <e> : "É"
+<Multi_key> <q> <n> <i> : "Í"

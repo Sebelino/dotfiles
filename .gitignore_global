@@ -1,0 +1,34 @@
+# Python
+*.pyc
+.ropeproject
+.coverage
+venv
+.idea
+
+# Python, py.test
+.cache
+
+# LaTeX
+*.aux
+*.log
+*.out
+mobile.djs
+*.toc
+
+# Vim
+*.swp
+*.swo
+
+# Binaries
+*.class
+*.exe
+*.o
+*.so
+
+# OS
+.Trashes
+Thumb.db
+
+# Git
+# Directory for files I do not wish to track
+gitignore
