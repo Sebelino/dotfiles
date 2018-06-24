@@ -1,0 +1,10 @@
+130,,,,
+0,25,#FFAAAA,Pomodoro 1,xrandr --output eDP1 --gamma 1:1:1; xrandr --output HDMI1 --gamma 1:1:1
+25,30,#0000FF,Break 1,xrandr --output eDP1 --gamma 1.5:1.5:1.0; xrandr --output HDMI1 --gamma 1.5:1.5:1.0
+30,55,#FF8888,Pomodoro 2,xrandr --output eDP1 --gamma 1:1:1; xrandr --output HDMI1 --gamma 1:1:1
+55,60,#00FF00,Break 2,xrandr --output eDP1 --gamma 1.5:1.0:1.5; xrandr --output HDMI1 --gamma 1.5:1.0:1.5
+60,85,#FF4444,Pomodoro 3,xrandr --output eDP1 --gamma 1:1:1; xrandr --output HDMI1 --gamma 1:1:1
+85,90,#00FFFF,Break 3,xrandr --output eDP1 --gamma 1.0:1.5:1.5; xrandr --output HDMI1 --gamma 1.0:1.5:1.5
+90,115,#FF0000,Pomodoro 4,xrandr --output eDP1 --gamma 1:1:1; xrandr --output HDMI1 --gamma 1:1:1
+115,130,#FFFFFF,Long break,xrandr --output eDP1 --gamma 1.5:1.5:1.5; xrandr --output HDMI1 --gamma 1.5:1.5:1.5
+

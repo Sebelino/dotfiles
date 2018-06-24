@@ -1,0 +1,2 @@
+5,#FFFFFF,ZEMUS,xrandr --output eDP1 --gamma 1.5:1.5:1.5; xrandr --output HDMI1 --gamma 1.5:1.5:1.5
+25,#4444FF,DENY,xrandr --output eDP1 --gamma 1:1:1; xrandr --output HDMI1 --gamma 1:1:1
