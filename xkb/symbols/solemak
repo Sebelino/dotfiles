@@ -7,7 +7,7 @@ xkb_symbols "basic" {
     name[Group1]= "Colemak";
 
     // Alphanumeric section
-//    key <TLDE> { [       Hyper_L,      Hyper_L,         Hyper_L,          Hyper_L ] };
+    key <TLDE> { [       section ] };
     key <AE01> { [             1,       exclam,      exclamdown,      onesuperior ] };
     key <AE02> { [             2,           at,       masculine,      twosuperior ] };
     key <AE03> { [             3,   numbersign,     ordfeminine,    threesuperior ] };
@@ -20,7 +20,8 @@ xkb_symbols "basic" {
     key <AE10> { [             0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
     key <AE11> { [       Hyper_L,      Hyper_L,         Hyper_L,          Hyper_L ] };
     key <AE12> { [          plus,        minus,        multiply,         division ] };
-    key <BKSP> { [ Escape ] };
+
+    key <BKSP> { [ Pause ] };
 
     key <AD01> { [             q,            Q,       braceleft,       Adiaeresis ] };
     key <AD02> { [             w,            W,      braceright,            Aring ] };
