@@ -30,9 +30,8 @@
 ! *color7:  #cccccc
 ! *color15: #ffffff
 
-!URxvt*font:            xft:inconsolata:size=12
-URxvt*font:            xft:inconsolata:size=8,xft:monospace:size=8
-!URxvt*font:            xft:monospace:size=10
+!URxvt*font:            xft:inconsolata:size=8,xft:monospace:size=8
+URxvt*font:            xft:monospace:size=9
 URxvt*urlLauncher:     chrome  
 URxvt*scrollBar:       false
 URxvt*scrollBar_right: false
@@ -66,6 +65,7 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard,keyboard-select,selection-to-clipboard
 
+! CTRL + ALT + å
 !URxvt.keysym.M-0xe5: perl:keyboard-select:activate
 URxvt.keysym.M-0xe5: perl:keyboard-select:search
 
