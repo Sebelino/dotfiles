@@ -19,7 +19,10 @@ let colors_name = "wombatsebelino"
 
 
 " General colors
-hi Normal		ctermfg=254		ctermbg=233		cterm=none		guifg=#f6f3e8	guibg=#242424	gui=none
+"hi Normal		ctermfg=254		ctermbg=233		cterm=none		guifg=#f6f3e8	guibg=#242424	gui=none
+"hi Normal		ctermfg=11		ctermbg=233		cterm=none		guifg=#f6f3e8	guibg=#242424	gui=none
+"hi Normal		ctermfg=118		ctermbg=233		cterm=none		guifg=#f6f3e8	guibg=#242424	gui=none
+hi Normal		ctermfg=227		ctermbg=233		cterm=none		guifg=#f6f3e8	guibg=#242424	gui=none
 hi Cursor		ctermfg=none	ctermbg=241		cterm=none		guifg=NONE		guibg=#656565	gui=none
 hi Visual		ctermfg=7		ctermbg=238		cterm=none		guifg=#f6f3e8	guibg=#444444	gui=none
 " hi VisualNOS
@@ -63,3 +66,8 @@ hi! link CursorColumn	CursorLine
 
 " vim:set ts=4 sw=4 noet:
 
+" Diffs
+highlight DiffAdd    cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+highlight DiffDelete cterm=bold ctermfg=10 ctermbg=16 gui=none guifg=bg guibg=Red
+highlight DiffChange cterm=bold ctermfg=10 ctermbg=17 gui=none guifg=bg guibg=Red
+highlight DiffText   cterm=bold ctermfg=10 ctermbg=88 gui=none guifg=bg guibg=Red
