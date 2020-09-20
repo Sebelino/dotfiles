@@ -32,3 +32,6 @@ Thumb.db
 # Git
 # Directory for files I do not wish to track
 gitignore
+
+# TODO Can be removed
+user.bazelrc
