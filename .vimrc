@@ -1,20 +1,18 @@
 "set encoding=utf-8
 
-" Vundle
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-surround'
-"Plugin 'vim-syntastic/syntastic'
-"Plugin 'klen/python-mode'
-"Plugin 'tpope/vim-unimpaired'
-"Plugin 'wannesm/wmnusmv.vim'
-call vundle#end()
-filetype plugin indent on
+" Vim-plug
+call plug#begin()
+Plug 'airblade/vim-gitgutter'
+Plug 'rust-lang/rust.vim'
+call plug#end()
+
+" Rust
+let g:rustfmt_autosave = 1
+
+" vim-gitgutter
+set updatetime=100  " How often to update markers to the left
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
 
 set backspace=start,eol,indent
 
