@@ -64,6 +64,8 @@ map  <F12> :set hls!<CR>
 imap <F12> <ESC>:set hls!<CR>a
 vmap <F12> <ESC>:set hls!<CR>gv
 
+map <F11> :set wrap!<CR>
+
 set tabstop=4 shiftwidth=4 softtabstop=4
 set textwidth=101
 set expandtab
