@@ -138,7 +138,7 @@ export GOPATH=$HOME/code/go
 export PATH="$HOME/bin:$HOME/scripts:/usr/local/bin:/usr/share/webapps/bin:$GOPATH/bin:$PATH"
 
 # Stderred
-export LD_PRELOAD="/home/sebelino/bin/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
+#export LD_PRELOAD="/home/sebelino/bin/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
 
 # C/C++
 CXXFLAGS="--std=gnu++14 $CXXFLAGS"
